@@ -1,0 +1,130 @@
+html {
+ box-sizing: border-box;
+}
+*,* :before, *:after {
+ box-sizing: inherit;
+}
+
+header {
+ background-color: #F7FFCA;
+ padding-top: 25px;
+ padding-bottom: 25px;
+}
+
+.logo {
+ width:  250px;
+}
+
+h1 {
+  color:  black;
+  font-family: "Didact Gothic";
+}
+
+h2 {
+ color: black;
+ font-weight: bold;
+ text-shadow: 1px 1px 1px black;
+ font-size: 25px;
+}
+
+h2:hover {
+ text-transform: uppercase
+}
+
+nav a {
+ color: black;
+ text-decoration: none;
+ background-color: #c7c6c1;
+ display: inline-block;
+ padding:  10%;
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ background: lightblue;
+ display: flex;
+ justify-content: space-around;
+}
+
+nav ul li {
+ background-color:  lightblue;
+ width:  10%;
+}
+
+a {
+ color: black;
+ text-decoration: none;
+}
+
+a:visited {
+color: black;
+text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+ color: lightblue;
+ text-decoration: none;
+}
+
+body {
+ background: #3f5866;
+ color:  black;
+ font-family:  arial;
+ text-align: center;
+ line-height: 2.0
+ margin: 0 auto;
+}
+
+#contact-me {
+ background: #F7FFCA;
+ padding-top: 150px;
+ padding-bottom: 150px;
+ margin-top: 25px;
+ margin-bottom: 350px;
+ margin-left: 350px;
+ margin-right: 350px;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="phone"],
+input[type="message"] {
+  border-color: #D6CCC0;
+  padding: 20px;
+}
+
+.btn {
+  font-size: pxtoem(17, 16);
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: $white;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  @include btn(darken($grey, 10%));
+  @include lato-book;
+  &.btn-submit {
+    @include btn($blue);
+  }
+}
+
+  .contact {
+   background: #F7FFCA;
+   width:  100%;
+   margin: 0 auto;
+   padding-top:  150px;
+   padding-bottom: 150px;
+  }
+
+  .description {
+    background: #F7FFCA;
+    margin-top: 25px;
+    margin-bottom: 350px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top:  150px;
+    padding-bottom: 150px;
+  }
